@@ -84,7 +84,7 @@ public class ScoreManager : MonoBehaviour
             if (repetitions > 2){
                 isThereBasicScore = true;
                 spinBtn.interactable = false;
-                GetScore(firstRowFigureValue, repetitions);
+                GetScore(firstRowFigureValue, repetitions, false);
                 ShowWinningFigures(winningFigures);
             }
             else{
@@ -121,9 +121,9 @@ public class ScoreManager : MonoBehaviour
                         .transform.GetChild((int)specialPaterns[patern].coordinatesList[coordinate].x).gameObject);
             }
 
-            if (repetitions == 5){
+            if (repetitions >= 3){
                 isThereExtraScore = true;
-                GetScore(firstValue, -1);
+                GetScore(firstValue, repetitions, true);
                 ShowWinningFigures(winningFigures);
             }
             else{
@@ -141,31 +141,41 @@ public class ScoreManager : MonoBehaviour
         _winningFigures.Clear();
     }
 
-    private void GetScore(int _figureValue, int _repetitions) //Acceder a los puntuajes y sumar el que pertoque
+    private void GetScore(int _figureValue, int _repetitions, bool _isSpecial) //Acceder a los puntuajes y sumar el que pertoque
     {
         for (int allFiguresScores = 0; allFiguresScores < allScores.Length; allFiguresScores++)
         {
             if (allScores[allFiguresScores].figureValue == _figureValue)
             {
-                if (_repetitions < 0)
+                if (!_isSpecial)
                 {
-                    myScore += allScores[allFiguresScores].specialScore;
-                    pointsToAdd += allScores[allFiguresScores].specialScore;
+                    if (_repetitions == 3){
+                        myScore += allScores[allFiguresScores].threeScore;
+                        pointsToAdd += allScores[allFiguresScores].threeScore;
+                    }
+                    else if (_repetitions == 4){
+                        myScore += allScores[allFiguresScores].fourScore;
+                        pointsToAdd += allScores[allFiguresScores].fourScore;
+                    }
+                    else if (_repetitions == 5){
+                        myScore += allScores[allFiguresScores].fiveScore;
+                        pointsToAdd += allScores[allFiguresScores].fiveScore;
+                    }
                 }
-                if (_repetitions == 3)
+                if(_isSpecial)
                 {
-                    myScore += allScores[allFiguresScores].threeScore;
-                    pointsToAdd += allScores[allFiguresScores].threeScore;
-                }
-                else if (_repetitions == 4)
-                {
-                    myScore += allScores[allFiguresScores].fourScore;
-                    pointsToAdd += allScores[allFiguresScores].fourScore;
-                }
-                else if (_repetitions == 5)
-                {
-                    myScore += allScores[allFiguresScores].fiveScore;
-                    pointsToAdd += allScores[allFiguresScores].fiveScore;
+                    if (_repetitions == 3){
+                        myScore += allScores[allFiguresScores].specialScore3;
+                        pointsToAdd += allScores[allFiguresScores].specialScore3;
+                    }
+                    if (_repetitions == 4){
+                        myScore += allScores[allFiguresScores].specialScore4;
+                        pointsToAdd += allScores[allFiguresScores].specialScore4;
+                    }
+                    if (_repetitions == 5){
+                        myScore += allScores[allFiguresScores].specialScore5;
+                        pointsToAdd += allScores[allFiguresScores].specialScore5;
+                    }
                 }
             }
             StartCoroutine("AddPoints");
@@ -193,7 +203,9 @@ public class ScoreProperties
     public int threeScore;
     public int fourScore;
     public int fiveScore;
-    public int specialScore;
+    public int specialScore3;
+    public int specialScore4;
+    public int specialScore5;
 }
 
 [System.Serializable]

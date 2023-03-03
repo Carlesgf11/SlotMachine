@@ -5,10 +5,9 @@ using UnityEngine;
 public class SlotDeTres : MonoBehaviour
 {
     public Transform instPos, destroyPos, midPos;
-    private float speed = 3600f; //Velocidad Unity: 2900 / Velocidad build: 3600
+    private float speed = 550f; //Velocidad Unity: 2900 / Velocidad build: 3600 / Velocidad WebGL: 550
     public SlotControl1 slotControl1;
     public bool amILast;
-    public bool instantiateLastOne;
 
     void Update()
     {

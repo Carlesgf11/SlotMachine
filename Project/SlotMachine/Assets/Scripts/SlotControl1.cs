@@ -8,7 +8,7 @@ public class SlotControl1 : MonoBehaviour
     [SerializeField] GameObject[] slotFigures;
     private int currentFigure;
     [SerializeField] GameObject slotDeTres;
-    [SerializeField] Transform slotsParent;
+    public Transform slotsParent;
     public bool isRunning;
     public Transform instPos, destroyPos, midPos;
     
@@ -64,7 +64,7 @@ public class SlotControl1 : MonoBehaviour
     {
         if (isRunning)
         {
-            slotsParent.transform.GetChild(1).GetComponent<SlotDeTres>().amILast = true;
+            slotsParent.transform.GetChild(slotsParent.transform.childCount - 1).GetComponent<SlotDeTres>().amILast = true;
             isRunning = false;
         }
     }

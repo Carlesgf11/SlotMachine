@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Scene
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 989
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 939
-  m_MinSize: {x: 781, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 780, y: 471}
+  m_MaxSize: {x: 18002, y: 14021}
   vertical: 0
-  controlID: 324
+  controlID: 5200
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1504
     height: 939
-  m_MinSize: {x: 505, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+  m_MinSize: {x: 505, y: 471}
+  m_MaxSize: {x: 14002, y: 14021}
   vertical: 1
-  controlID: 330
+  controlID: 5242
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 505, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 331
+  controlID: 5118
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,10 +274,10 @@ MonoBehaviour:
     y: 568
     width: 1504
     height: 371
-  m_MinSize: {x: 433, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+  m_MinSize: {x: 432, y: 250}
+  m_MaxSize: {x: 14002, y: 10000}
   vertical: 0
-  controlID: 303
+  controlID: 5243
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -475,9 +475,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 52fbffff
+      m_SelectedIDs: 2e5d0000
+      m_LastClickedID: 23854
+      m_ExpandedIDs: 5acbf8ff80cbf8ff50ccf8ff52fbfffff45c0000245d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -537,9 +537,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 286.76215, y: 176.21315, z: -806.8924}
+    m_Target: {x: -0.65460277, y: 5.1635704, z: -1207.6516}
     speed: 2
-    m_Value: {x: 286.76215, y: 176.21315, z: -806.8924}
+    m_Value: {x: -0.65460277, y: 5.1635704, z: -1207.6516}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -590,9 +590,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 352.24472
+    m_Target: 119.728714
     speed: 2
-    m_Value: 352.24472
+    m_Value: 119.728714
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -671,14 +671,14 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 8816334340869107717, guid: d17f105f8a9acc9488b83351d021e72e, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1.0567244
+    - e00: 0.73186594
       e01: 0
       e02: 0
-      e03: -310.90015
+      e03: -151.14163
       e10: 0
-      e11: 1.0567244
+      e11: 0.73186594
       e12: 0
-      e13: 70.305405
+      e13: 160.27173
       e20: 0
       e21: 0
       e22: 1
@@ -741,21 +741,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\gonza\Documents\GitHub\SlotMachine\Project\SlotMachine
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac3f0000
-    m_LastClickedID: 16300
+    m_SelectedIDs: ba3f0000
+    m_LastClickedID: 16314
     m_ExpandedIDs: 00000000ac3f0000ae3f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -892,7 +892,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 15642
+  m_LastSelectedObjectID: 23854
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
